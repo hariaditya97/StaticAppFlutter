@@ -1,0 +1,119 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color(0xff37312f),
+        body: SafeArea(
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 20,
+                ),
+                Center(
+                  child: Text(
+                    "ROXY",
+                    style: TextStyle(
+                      fontFamily: 'BungeeInline',
+                      color: Colors.white,
+                      fontSize: 35,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  height: 400,
+                  child: Image(
+                    image:
+                        AssetImage('images/wes-hicks-yevKUU6qfJM-unsplash.jpg'),
+                  ),
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 215,
+                  child: Divider(
+                    color: Colors.deepOrange,
+                  ),
+                ),
+                Card(
+                  color: Color(0xff2c2c2c),
+                  margin: EdgeInsets.fromLTRB(60, 10, 40, 10),
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Row(
+                      children: <Widget>[
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Icon(
+                          Icons.email,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "kapilrishabh@gmail.com",
+                          style: TextStyle(
+                            fontFamily: "Mukta",
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Color(0xff2c2c2c),
+                  margin: EdgeInsets.fromLTRB(60, 10, 40, 30),
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Row(
+                      children: <Widget>[
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Icon(
+                          Icons.phone,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Text(
+                          "+91-98100-76501",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: "Mukta",
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  child: Text("Pioneering Audio Technology since 1951",
+                      style: TextStyle(
+                        fontFamily: 'Raleway Italics',
+                        color: Colors.white,
+                        fontSize: 16,
+                      )),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
